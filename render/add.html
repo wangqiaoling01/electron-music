@@ -1,0 +1,49 @@
+<!--
+ * @Description: Description
+ * @Version: 1.0
+ * @Autor: WangQiaoLing
+ * @Date: 2020-07-03 10:09:49
+ * @LastEditors: WangQiaoLing
+ * @LastEditTime: 2020-07-03 11:34:10
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>添加音乐</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>我的曲库</h2>
+      <div id="musicList" class="mb-2">您还未选择任何音乐文件</div>
+      <button
+        id="select-music"
+        type="button"
+        class="btn btn-outline-primary btn-lg btn-block mt-4"
+      >
+        选择音乐
+      </button>
+      <button
+        id="add-music"
+        type="button"
+        class="btn btn-primary btn-lg btn-block mt-4"
+      >
+        导入音乐
+      </button>
+    </div>
+    <script src="./add.js"></script>
+  </body>
+</html>

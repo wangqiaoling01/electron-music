@@ -1,0 +1,60 @@
+<!--
+ * @Description: Description
+ * @Version: 1.0
+ * @Autor: WangQiaoLing
+ * @Date: 2020-07-03 10:09:34
+ * @LastEditors: WangQiaoLing
+ * @LastEditTime: 2020-07-03 18:45:47
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>本地播放器</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>我的播放器</h2>
+      <button
+        id="add-music-btn"
+        type="button"
+        class="btn btn-primary btn-lg btn-block mt-4"
+      >
+        添加歌曲到曲库
+      </button>
+      <div id="tracksList" class="mt-4"></div>
+      <div class="container fixed-bottom bg-white pb-4">
+        <hr />
+        <div class="row my-2" id="player-status"></div>
+        <div class="progress">
+          <div
+            id="player-progress"
+            class="progress-bar bg-success"
+            role="progressbar"
+          >
+            0%
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

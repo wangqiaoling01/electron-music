@@ -1,0 +1,6 @@
+#tracksList .col-2 .fa:hover {
+  cursor: pointer;
+}
+#player-progress {
+  width: 0%;
+}
